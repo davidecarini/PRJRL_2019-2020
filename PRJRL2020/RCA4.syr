@@ -1,0 +1,332 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: RCA4.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RCA4.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RCA4"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : RCA4
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/PRJRL2020/FA.vhd" in Library work.
+Architecture rtl of Entity fa is up to date.
+Compiling vhdl file "C:/Xilinx/PRJRL2020/RCA4.vhd" in Library work.
+Architecture struct of Entity rca4 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RCA4> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <FA> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RCA4> in library <work> (Architecture <struct>).
+Entity <RCA4> analyzed. Unit <RCA4> generated.
+
+Analyzing Entity <FA> in library <work> (Architecture <rtl>).
+Entity <FA> analyzed. Unit <FA> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FA>.
+    Related source file is "C:/Xilinx/PRJRL2020/FA.vhd".
+    Found 1-bit xor3 for signal <S>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <RCA4>.
+    Related source file is "C:/Xilinx/PRJRL2020/RCA4.vhd".
+Unit <RCA4> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RCA4> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RCA4, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RCA4.ngr
+Top Level Output File Name         : RCA4
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 98
+
+Cell Usage :
+# BELS                             : 64
+#      LUT3                        : 64
+# IO Buffers                       : 98
+#      IBUF                        : 65
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                       37  out of    768     4%  
+ Number of 4 input LUTs:                 64  out of   1536     4%  
+ Number of IOs:                          98
+ Number of bonded IOBs:                  98  out of    124    79%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 47.847ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1153 / 33
+-------------------------------------------------------------------------
+Delay:               47.847ns (Levels of Logic = 34)
+  Source:            X<0> (PAD)
+  Destination:       S<31> (PAD)
+
+  Data Path: X<0> to S<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  X_0_IBUF (X_0_IBUF)
+     LUT3:I0->O            2   0.479   0.804  G1[0].FAN/COUT1 (C<1>)
+     LUT3:I2->O            2   0.479   0.804  G1[1].FAN/COUT1 (C<2>)
+     LUT3:I2->O            2   0.479   0.804  G1[2].FAN/COUT1 (C<3>)
+     LUT3:I2->O            2   0.479   0.804  G1[3].FAN/COUT1 (C<4>)
+     LUT3:I2->O            2   0.479   0.804  G1[4].FAN/COUT1 (C<5>)
+     LUT3:I2->O            2   0.479   0.804  G1[5].FAN/COUT1 (C<6>)
+     LUT3:I2->O            2   0.479   0.804  G1[6].FAN/COUT1 (C<7>)
+     LUT3:I2->O            2   0.479   0.804  G1[7].FAN/COUT1 (C<8>)
+     LUT3:I2->O            2   0.479   0.804  G1[8].FAN/COUT1 (C<9>)
+     LUT3:I2->O            2   0.479   0.804  G1[9].FAN/COUT1 (C<10>)
+     LUT3:I2->O            2   0.479   0.804  G1[10].FAN/COUT1 (C<11>)
+     LUT3:I2->O            2   0.479   0.804  G1[11].FAN/COUT1 (C<12>)
+     LUT3:I2->O            2   0.479   0.804  G1[12].FAN/COUT1 (C<13>)
+     LUT3:I2->O            2   0.479   0.804  G1[13].FAN/COUT1 (C<14>)
+     LUT3:I2->O            2   0.479   0.804  G1[14].FAN/COUT1 (C<15>)
+     LUT3:I2->O            2   0.479   0.804  G1[15].FAN/COUT1 (C<16>)
+     LUT3:I2->O            2   0.479   0.804  G1[16].FAN/COUT1 (C<17>)
+     LUT3:I2->O            2   0.479   0.804  G1[17].FAN/COUT1 (C<18>)
+     LUT3:I2->O            2   0.479   0.804  G1[18].FAN/COUT1 (C<19>)
+     LUT3:I2->O            2   0.479   0.804  G1[19].FAN/COUT1 (C<20>)
+     LUT3:I2->O            2   0.479   0.804  G1[20].FAN/COUT1 (C<21>)
+     LUT3:I2->O            2   0.479   0.804  G1[21].FAN/COUT1 (C<22>)
+     LUT3:I2->O            2   0.479   0.804  G1[22].FAN/COUT1 (C<23>)
+     LUT3:I2->O            2   0.479   0.804  G1[23].FAN/COUT1 (C<24>)
+     LUT3:I2->O            2   0.479   0.804  G1[24].FAN/COUT1 (C<25>)
+     LUT3:I2->O            2   0.479   0.804  G1[25].FAN/COUT1 (C<26>)
+     LUT3:I2->O            2   0.479   0.804  G1[26].FAN/COUT1 (C<27>)
+     LUT3:I2->O            2   0.479   0.804  G1[27].FAN/COUT1 (C<28>)
+     LUT3:I2->O            2   0.479   0.804  G1[28].FAN/COUT1 (C<29>)
+     LUT3:I2->O            2   0.479   0.804  G1[29].FAN/COUT1 (C<30>)
+     LUT3:I2->O            2   0.479   1.040  G1[30].FAN/COUT1 (C<31>)
+     LUT3:I0->O            1   0.479   0.681  G1[31].FAN/Mxor_S_xo<0>1 (S_31_OBUF)
+     OBUF:I->O                 4.909          S_31_OBUF (S<31>)
+    ----------------------------------------
+    Total                     47.847ns (20.952ns logic, 26.895ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.53 secs
+ 
+--> 
+
+Total memory usage is 4521460 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

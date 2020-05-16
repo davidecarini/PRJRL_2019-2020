@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Xilinx/PRJRL2020/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/Xilinx/PRJRL2020/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/PRJRL2020/FA.vhd" in Library work.
+ERROR:HDLParsers:3011 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 13. End Identifier FA does not match declaration, FS.
+ERROR:HDLParsers:3010 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 15. Entity FS does not exist.
+ERROR:HDLParsers:3312 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. Undefined symbol 'D'.
+ERROR:HDLParsers:3312 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. Undefined symbol 'A'.
+ERROR:HDLParsers:1209 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. A: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. Undefined symbol 'B'.
+ERROR:HDLParsers:1209 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. B: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. Undefined symbol 'C'.
+ERROR:HDLParsers:1209 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 19. C: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 21. D: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 21. not can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Xilinx/PRJRL2020/FA.vhd" Line 21. not can not have such operands in this context.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+
+Total memory usage is 4476644 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

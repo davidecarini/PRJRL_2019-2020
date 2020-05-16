@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/par/RCA4_timesim.vhd"
+vhdl isim_temp "TB_RCA4.vhd"

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work FS.vhd -prj PRJRL2020 -o FS.spl -module FS -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 FS.spl C:/Xilinx/PRJRL2020/FS.sym 

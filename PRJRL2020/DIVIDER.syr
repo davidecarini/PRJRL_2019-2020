@@ -1,0 +1,473 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: DIVIDER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DIVIDER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DIVIDER"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-pq208
+
+---- Source Options
+Top Module Name                    : DIVIDER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/PRJRL2020/FS.vhd" in Library work.
+Architecture rtl of Entity fs is up to date.
+Compiling vhdl file "C:/Xilinx/PRJRL2020/COUNTER_DOWN.vhd" in Library work.
+Architecture rtl of Entity counter_down is up to date.
+Compiling vhdl file "C:/Xilinx/PRJRL2020/FS32.vhd" in Library work.
+Architecture struct of Entity fs32 is up to date.
+Compiling vhdl file "C:/Xilinx/PRJRL2020/left_shifter.vhd" in Library work.
+Architecture rtl of Entity left_shifter is up to date.
+Compiling vhdl file "C:/Xilinx/PRJRL2020/DIVIDER.vhd" in Library work.
+Entity <divider> compiled.
+Entity <divider> (Architecture <rtl>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DIVIDER> in library <work> (architecture <rtl>) with generics.
+	m = 32
+
+Analyzing hierarchy for entity <COUNTER_DOWN> in library <work> (architecture <rtl>) with generics.
+	m = 5
+
+Analyzing hierarchy for entity <FS32> in library <work> (architecture <struct>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <left_shifter> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <FS> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <DIVIDER> in library <work> (Architecture <rtl>).
+	m = 32
+Entity <DIVIDER> analyzed. Unit <DIVIDER> generated.
+
+Analyzing generic Entity <COUNTER_DOWN> in library <work> (Architecture <rtl>).
+	m = 5
+Entity <COUNTER_DOWN> analyzed. Unit <COUNTER_DOWN> generated.
+
+Analyzing generic Entity <FS32> in library <work> (Architecture <struct>).
+	N = 32
+Entity <FS32> analyzed. Unit <FS32> generated.
+
+Analyzing Entity <FS> in library <work> (Architecture <rtl>).
+Entity <FS> analyzed. Unit <FS> generated.
+
+Analyzing generic Entity <left_shifter> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <left_shifter> analyzed. Unit <left_shifter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <COUNTER_DOWN>.
+    Related source file is "C:/Xilinx/PRJRL2020/COUNTER_DOWN.vhd".
+    Found 5-bit down counter for signal <t_count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <COUNTER_DOWN> synthesized.
+
+
+Synthesizing Unit <left_shifter>.
+    Related source file is "C:/Xilinx/PRJRL2020/left_shifter.vhd".
+WARNING:Xst:647 - Input <R<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <left_shifter> synthesized.
+
+
+Synthesizing Unit <FS>.
+    Related source file is "C:/Xilinx/PRJRL2020/FS.vhd".
+    Found 1-bit xor3 for signal <D>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <FS> synthesized.
+
+
+Synthesizing Unit <FS32>.
+    Related source file is "C:/Xilinx/PRJRL2020/FS32.vhd".
+Unit <FS32> synthesized.
+
+
+Synthesizing Unit <DIVIDER>.
+    Related source file is "C:/Xilinx/PRJRL2020/DIVIDER.vhd".
+WARNING:Xst:647 - Input <START> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <t_result_sub> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <t_int> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t_R_shift<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <f> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <B0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <DONE>.
+    Found 1-bit register for signal <ERROR>.
+    Found 32-bit register for signal <t_Q>.
+    Found 32-bit register for signal <t_R>.
+    Found 32-bit comparator less for signal <t_R$cmp_lt0000> created at line 101.
+    Found 32-bit register for signal <t_s>.
+    Found 1-bit 32-to-1 multiplexer for signal <t_s_0$mux0000> created at line 100.
+    Summary:
+	inferred  98 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <DIVIDER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 5-bit down counter                                    : 1
+# Registers                                            : 67
+ 1-bit register                                        : 66
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+# Xors                                                 : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 5-bit down counter                                    : 1
+# Registers                                            : 98
+ Flip-Flops                                            : 98
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+# Xors                                                 : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DIVIDER> ...
+
+Optimizing unit <FS32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DIVIDER, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 103
+ Flip-Flops                                            : 103
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DIVIDER.ngr
+Top Level Output File Name         : DIVIDER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 133
+
+Cell Usage :
+# BELS                             : 296
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 34
+#      LUT3                        : 90
+#      LUT3_D                      : 5
+#      LUT3_L                      : 9
+#      LUT4                        : 71
+#      LUT4_D                      : 15
+#      LUT4_L                      : 4
+#      MUXCY                       : 40
+#      MUXF5                       : 17
+#      MUXF6                       : 4
+#      MUXF7                       : 2
+#      MUXF8                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 103
+#      FDCE                        : 98
+#      FDP                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 131
+#      IBUF                        : 65
+#      OBUF                        : 66
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-5 
+
+ Number of Slices:                      133  out of   1920     6%  
+ Number of Slice Flip Flops:            102  out of   3840     2%  
+ Number of 4 input LUTs:                230  out of   3840     5%  
+ Number of IOs:                         133
+ Number of bonded IOBs:                 132  out of    141    93%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 103   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 103   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.111ns (Maximum Frequency: 98.904MHz)
+   Minimum input arrival time before clock: 10.473ns
+   Maximum output required time after clock: 6.306ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 10.111ns (frequency: 98.904MHz)
+  Total number of paths / destination ports: 6356 / 134
+-------------------------------------------------------------------------
+Delay:               10.111ns (Levels of Logic = 7)
+  Source:            t_s_1 (FF)
+  Destination:       t_R_30 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: t_s_1 to t_R_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   0.804  t_s_1 (t_s_1)
+     LUT4_D:I2->O          2   0.479   0.915  inst_FS32/G1[2].FSN/Mxor_D_xo<0>21 (inst_FS32/N31)
+     LUT3:I1->O            4   0.479   0.779  inst_FS32/G1[4].FSN/Mxor_D_xo<0>11 (inst_FS32/N11)
+     MUXF5:S->O            4   0.540   0.838  inst_FS32/G1[8].FSN/Mxor_D_xo<0>11 (inst_FS32/N3)
+     LUT3:I2->O           12   0.479   0.950  inst_FS32/G1[12].FSN/Mxor_D_xo<0>11 (inst_FS32/N5)
+     MUXF5:S->O            5   0.540   0.842  inst_FS32/G1[24].FSN/Mxor_D_xo<0>11 (inst_FS32/N111)
+     LUT3_D:I2->O          1   0.479   0.704  t_R_mux0001<29>1_SW0 (N125)
+     LUT4:I3->O            1   0.479   0.000  t_R_mux0001<30>1 (t_R_mux0001<30>)
+     FDCE:D                    0.176          t_R_30
+    ----------------------------------------
+    Total                     10.111ns (4.277ns logic, 5.834ns route)
+                                       (42.3% logic, 57.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 7125 / 163
+-------------------------------------------------------------------------
+Offset:              10.473ns (Levels of Logic = 8)
+  Source:            D<0> (PAD)
+  Destination:       t_R_30 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: D<0> to t_R_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.715   1.078  D_0_IBUF (D_0_IBUF)
+     LUT4_D:I0->O          2   0.479   0.915  inst_FS32/G1[2].FSN/Mxor_D_xo<0>21 (inst_FS32/N31)
+     LUT3:I1->O            4   0.479   0.779  inst_FS32/G1[4].FSN/Mxor_D_xo<0>11 (inst_FS32/N11)
+     MUXF5:S->O            4   0.540   0.838  inst_FS32/G1[8].FSN/Mxor_D_xo<0>11 (inst_FS32/N3)
+     LUT3:I2->O           12   0.479   0.950  inst_FS32/G1[12].FSN/Mxor_D_xo<0>11 (inst_FS32/N5)
+     MUXF5:S->O            5   0.540   0.842  inst_FS32/G1[24].FSN/Mxor_D_xo<0>11 (inst_FS32/N111)
+     LUT3_D:I2->O          1   0.479   0.704  t_R_mux0001<29>1_SW0 (N125)
+     LUT4:I3->O            1   0.479   0.000  t_R_mux0001<30>1 (t_R_mux0001<30>)
+     FDCE:D                    0.176          t_R_30
+    ----------------------------------------
+    Total                     10.473ns (4.366ns logic, 6.107ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 66 / 66
+-------------------------------------------------------------------------
+Offset:              6.306ns (Levels of Logic = 1)
+  Source:            t_R_30 (FF)
+  Destination:       R<30> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: t_R_30 to R<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.626   0.771  t_R_30 (t_R_30)
+     OBUF:I->O                 4.909          R_30_OBUF (R<30>)
+    ----------------------------------------
+    Total                      6.306ns (5.535ns logic, 0.771ns route)
+                                       (87.8% logic, 12.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.42 secs
+ 
+--> 
+
+Total memory usage is 4521436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

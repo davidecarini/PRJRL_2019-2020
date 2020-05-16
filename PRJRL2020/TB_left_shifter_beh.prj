@@ -1,0 +1,2 @@
+vhdl work "left_shifter.vhd"
+vhdl work "TB_left_shifter.vhd"
