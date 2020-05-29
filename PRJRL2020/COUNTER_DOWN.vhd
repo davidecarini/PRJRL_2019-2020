@@ -8,25 +8,30 @@ entity COUNTER_DOWN is
 	port(
 			CLK: 		IN std_logic;
 			RESET: 	IN std_logic;
+			N1: IN std_logic_vector(31 downto 0);
 			CNT: 		OUT Std_logic_vector( 4 downto 0);
-			STOP:   OUT  std_logic
+			STOP:   OUT  std_logic;
+			I: OUT integer;
+			NN: OUT std_logic
 		);
 
 end COUNTER_DOWN;
 
 architecture RTL of COUNTER_DOWN is
-signal t_count : std_logic_vector(4 downto 0);
-begin
-process(CLK,RESET)
+	signal t_count : std_logic_vector(4 downto 0);
 	begin
-		if(RESET='1') then
-			t_count <="11111";
-		elsif (CLK' event and CLK='1') then
-			t_count <= t_count -1;
-		end if;
-		if(t_count ="00000") then
-			STOP <='1';
-		end if;
-	end process;
-CNT <=t_count;
+	process(CLK,RESET)
+		begin
+			if(RESET='1') then
+				t_count <="11111";
+			elsif (CLK' event and CLK='1') then
+				t_count <= t_count -1;
+			end if;
+			if(t_count ="00000") then
+				STOP <='1';
+			end if;
+		end process;
+	CNT <=t_count;
+	I <= to_integer(unsigned(t_count));
+	NN <= N1(to_integer(unsigned(t_count))); 
 end RTL;

@@ -39,9 +39,5 @@ architecture STRUCT of FS32 is
 		B0  => F(N+1) 
 	);
 	end generate;
-process (A,B,C)
-begin
-end process;
-
 
 end STRUCT;

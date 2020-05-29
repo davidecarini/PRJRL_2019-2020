@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Xilinx/PRJRL2020/FS32.vhd";
+static const char *ng0 = "D:/Xilinx/PRJRL2020/FS32.vhd";
 
 
 
@@ -41,7 +41,7 @@ LAB0:    xsi_set_current_line(30, ng0);
 LAB3:    t1 = (t0 + 9800U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 16328);
+    t1 = (t0 + 16064);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -49,7 +49,7 @@ LAB3:    t1 = (t0 + 9800U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_delta(t1, 32U, 1, 0LL);
 
-LAB2:    t8 = (t0 + 16216);
+LAB2:    t8 = (t0 + 15968);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -83,7 +83,7 @@ LAB3:    t1 = (t0 + 10280U);
     t6 = (0 + t5);
     t1 = (t2 + t6);
     t7 = *((unsigned char *)t1);
-    t8 = (t0 + 16392);
+    t8 = (t0 + 16128);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
     t11 = (t10 + 56U);
@@ -91,7 +91,7 @@ LAB3:    t1 = (t0 + 10280U);
     *((unsigned char *)t12) = t7;
     xsi_driver_first_trans_fast_port(t8);
 
-LAB2:    t13 = (t0 + 16232);
+LAB2:    t13 = (t0 + 15984);
     *((int *)t13) = 1;
 
 LAB1:    return;
@@ -99,20 +99,10 @@ LAB4:    goto LAB2;
 
 }
 
-static void work_a_0004841870_3708392848_p_2(char *t0)
-{
-    char *t1;
-
-LAB0:    t1 = (t0 + 16248);
-    *((int *)t1) = 1;
-
-LAB1:    return;
-}
-
 
 extern void work_a_0004841870_3708392848_init()
 {
-	static char *pe[] = {(void *)work_a_0004841870_3708392848_p_0,(void *)work_a_0004841870_3708392848_p_1,(void *)work_a_0004841870_3708392848_p_2};
+	static char *pe[] = {(void *)work_a_0004841870_3708392848_p_0,(void *)work_a_0004841870_3708392848_p_1};
 	xsi_register_didat("work_a_0004841870_3708392848", "isim/TB_DIVIDER_isim_beh.exe.sim/work/a_0004841870_3708392848.didat");
 	xsi_register_executes(pe);
 }

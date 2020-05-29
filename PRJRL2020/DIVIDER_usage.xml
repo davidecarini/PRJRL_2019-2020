@@ -4,30 +4,30 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="40">
-<DesignStatistics TimeStamp="Fri May 15 17:59:48 2020"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="40">
-<attrib name="value" value="132"/></item>
-<item name="AGG_IO" rev="40">
-<attrib name="value" value="132"/></item>
-<item name="AGG_SLICE" rev="40">
-<attrib name="value" value="167"/></item>
-<item name="NUM_4_INPUT_LUT" rev="40">
-<attrib name="value" value="228"/></item>
-<item name="NUM_BONDED_IOB" rev="40">
-<attrib name="value" value="132"/></item>
-<item name="NUM_BUFGMUX" rev="40">
-<attrib name="value" value="1"/></item>
-<item name="NUM_CYMUX" rev="40">
-<attrib name="value" value="40"/></item>
-<item name="NUM_IOB_FF" rev="40">
-<attrib name="value" value="1"/></item>
-<item name="NUM_SLICEL" rev="40">
+<DeviceUsageSummary rev="47">
+<DesignStatistics TimeStamp="Tue May 19 17:23:34 2020"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="47">
+<attrib name="value" value="133"/></item>
+<item name="AGG_IO" rev="47">
+<attrib name="value" value="133"/></item>
+<item name="AGG_SLICE" rev="47">
 <attrib name="value" value="163"/></item>
-<item name="NUM_SLICEM" rev="40">
-<attrib name="value" value="4"/></item>
-<item name="NUM_SLICE_FF" rev="40">
-<attrib name="value" value="102"/></item>
+<item name="NUM_4_INPUT_LUT" rev="47">
+<attrib name="value" value="247"/></item>
+<item name="NUM_BONDED_IOB" rev="47">
+<attrib name="value" value="133"/></item>
+<item name="NUM_BUFGMUX" rev="47">
+<attrib name="value" value="1"/></item>
+<item name="NUM_CYMUX" rev="47">
+<attrib name="value" value="40"/></item>
+<item name="NUM_IOB_FF" rev="47">
+<attrib name="value" value="2"/></item>
+<item name="NUM_SLICEL" rev="47">
+<attrib name="value" value="155"/></item>
+<item name="NUM_SLICEM" rev="47">
+<attrib name="value" value="8"/></item>
+<item name="NUM_SLICE_FF" rev="47">
+<attrib name="value" value="73"/></item>
 </group>
 </DesignStatistics>
 <CmdHistory>

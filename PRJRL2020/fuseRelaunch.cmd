@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Xilinx/PRJRL2020/TB_DIVIDER_isim_beh.exe" -prj "C:/Xilinx/PRJRL2020/TB_DIVIDER_beh.prj" "work.TB_DIVIDER" 
+-intstyle "ise" -incremental -o "D:/Xilinx/PRJRL2020/TB_DIVIDER_isim_par.exe" -prj "D:/Xilinx/PRJRL2020/TB_DIVIDER_par.prj" "work.TB_DIVIDER" 

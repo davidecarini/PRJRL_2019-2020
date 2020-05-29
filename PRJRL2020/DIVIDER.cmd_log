@@ -195,3 +195,54 @@ map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_
 par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
 netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 
+xst -intstyle ise -ifn "D:/Xilinx/PRJRL2020/DIVIDER.xst" -ofn "D:/Xilinx/PRJRL2020/DIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 DIVIDER.ngc DIVIDER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o DIVIDER_map.ncd DIVIDER.ngd DIVIDER.pcf 
+par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DIVIDER.twx DIVIDER.ncd -o DIVIDER.twr DIVIDER.pcf 
+netgen -intstyle ise -s 5  -pcf DIVIDER.pcf -rpw 100 -tpw 0 -ar Structure -tm DIVIDER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim DIVIDER.ncd DIVIDER_timesim.vhd 

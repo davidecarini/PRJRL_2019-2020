@@ -75,12 +75,12 @@ BEGIN
    process
 	variable D_t, N_t : integer;
    begin
+			TB_START <='1';
 			N_t := 143;
 			D_t := 9;
 			TB_D <= std_logic_vector(to_unsigned(D_t,32));
 			TB_N <= std_logic_vector(to_unsigned(N_t,32));
-			wait for 100 ns;
-			wait;
+			wait until TB_DONE='1';
    end process;
 
 END;

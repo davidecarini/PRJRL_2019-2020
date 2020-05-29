@@ -1,13 +1,13 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-CDSLDEG::  Fri May 15 17:59:50 2020
+DESKTOP-L055AQ6::  Tue May 19 17:23:38 2020
 
 par -w -intstyle ise -ol high -t 1 DIVIDER_map.ncd DIVIDER.ncd DIVIDER.pcf 
 
 
 Constraints file: DIVIDER.pcf.
-Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s200.nph' in environment D:\Xilinx\14.7\ISE_DS\ISE\.
    "DIVIDER" is an NCD, version 3.2, device xc3s200, package pq208, speed -5
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -25,11 +25,11 @@ Device speed data version:  "PRODUCTION 1.39 2013-10-13".
 Device Utilization Summary:
 
    Number of BUFGMUXs                        1 out of 8      12%
-   Number of External IOBs                 132 out of 141    93%
-      Number of LOCed IOBs                   0 out of 132     0%
+   Number of External IOBs                 133 out of 141    94%
+      Number of LOCed IOBs                   0 out of 133     0%
 
-   Number of Slices                        167 out of 1920    8%
-      Number of SLICEMs                      4 out of 960     1%
+   Number of Slices                        163 out of 1920    8%
+      Number of SLICEMs                      8 out of 960     1%
 
 
 
@@ -38,56 +38,56 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 0 secs 
-Finished initial Timing Analysis.  REAL time: 0 secs 
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 0 secs 
-Total CPU  time at the beginning of Placer: 0 secs 
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:af37) REAL time: 0 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:abb9) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:af37) REAL time: 0 secs 
+Phase 2.7  Design Feasibility Check (Checksum:abb9) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:af37) REAL time: 0 secs 
+Phase 3.31  Local Placement Optimization (Checksum:abb9) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ....
-Phase 4.2  Initial Clock and IO Placement (Checksum:244c9a77) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:27a66e79) REAL time: 3 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:244c9a77) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:27a66e79) REAL time: 3 secs 
 
 Phase 6.3  Local Placement Optimization
 ...
-Phase 6.3  Local Placement Optimization (Checksum:f1597975) REAL time: 1 secs 
+Phase 6.3  Local Placement Optimization (Checksum:fafb6e99) REAL time: 4 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:f1597975) REAL time: 1 secs 
+Phase 7.5  Local Placement Optimization (Checksum:fafb6e99) REAL time: 4 secs 
 
 Phase 8.8  Global Placement
-...
-...
+..
+..
+..
 ...
 .....
-.....
-Phase 8.8  Global Placement (Checksum:fcc221f8) REAL time: 2 secs 
+Phase 8.8  Global Placement (Checksum:668d51ab) REAL time: 6 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:fcc221f8) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:668d51ab) REAL time: 6 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:5073329f) REAL time: 3 secs 
+Phase 10.18  Placement Optimization (Checksum:af2f8230) REAL time: 7 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:5073329f) REAL time: 3 secs 
+Phase 11.5  Local Placement Optimization (Checksum:af2f8230) REAL time: 7 secs 
 
-Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 7 secs 
+Total CPU  time to Placer completion: 7 secs 
 Writing design to file DIVIDER.ncd
 
 
@@ -95,30 +95,30 @@ Writing design to file DIVIDER.ncd
 Starting Router
 
 
-Phase  1  : 1163 unrouted;      REAL time: 3 secs 
+Phase  1  : 1139 unrouted;      REAL time: 8 secs 
 
-Phase  2  : 1074 unrouted;      REAL time: 3 secs 
+Phase  2  : 1067 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 427 unrouted;      REAL time: 3 secs 
+Phase  3  : 458 unrouted;      REAL time: 8 secs 
 
-Phase  4  : 434 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 472 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Updating file: DIVIDER.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Total REAL time to Router completion: 12 secs 
+Total CPU time to Router completion: 11 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -136,7 +136,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           CLK_BUFGP |      BUFGMUX0| No   |   83 |  0.035     |  0.915      |
+|           CLK_BUFGP |      BUFGMUX0| No   |   66 |  0.035     |  0.915      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -156,8 +156,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     8.567ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.719ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     8.959ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.784ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,8 +173,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 13 secs 
+Total CPU time to PAR completion: 12 secs 
 
 Peak Memory Usage:  4394 MB
 
