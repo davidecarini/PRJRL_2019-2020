@@ -30,8 +30,7 @@ Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1
 Compiling architecture structure of entity DIVIDER [divider_default]
 Compiling architecture behavior of entity tb_divider
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 1469 VHDL Units
 Built simulation executable D:/Xilinx/PRJRL2020/TB_DIVIDER_isim_par.exe
-Fuse Memory Usage: 93340 KB
-Fuse CPU Usage: 8375 ms
+Fuse Memory Usage: 92580 KB
+Fuse CPU Usage: 8546 ms

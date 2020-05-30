@@ -8,18 +8,17 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/DIVIDER - RTL C:|Xilinx|PRJRL2020|DIVIDER.vhd/inst_FS32 - FS32 - STRUCT</ClosedNode>
-         <ClosedNode>/DIVIDER - RTL D:|Xilinx|PRJRL2020|DIVIDER.vhd</ClosedNode>
          <ClosedNode>/DIVIDER - RTL D:|Xilinx|PRJRL2020|DIVIDER.vhd/inst_FS32 - FS32 - STRUCT</ClosedNode>
          <ClosedNode>/FS32 - STRUCT C:|Xilinx|PRJRL2020|FS32.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>PRJRL2020</SelectedItem>
+         <SelectedItem>inst_COMP - Comparator - behv (D:/Xilinx/PRJRL2020/COMPARATOR.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e8000000020000000000000000000000000200000064ffffffff000000810000000300000002000000e80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ae000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ae0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>PRJRL2020</CurrentItem>
+      <CurrentItem>inst_COMP - Comparator - behv (D:/Xilinx/PRJRL2020/COMPARATOR.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -27,13 +26,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fa000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fa0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -76,7 +75,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fa000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fa0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -153,7 +152,7 @@
       <SelectedItems>
          <SelectedItem>TB_DIVIDER - behavior (D:/Xilinx/PRJRL2020/TB_DIVIDER.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c0000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -187,5 +186,6 @@
       <CurrentItem>Simulate Post-Place &amp; Route Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000de0000009601000000050100000002</SourceProcessView>
-   <CurrentView>Post-Route Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
+   <CopyAdditionalFiles/>
 </Project>
