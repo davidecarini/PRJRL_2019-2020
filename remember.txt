@@ -1,0 +1,17 @@
+Macchina a Stati
+Il documento deve descrivere l’architettura del circuito e non la sua implementazione. Questo significa che la sua macchina a stati non la deve sintetizzare lei e neppure descrivere in termini di diagrammi degli stati.
+Spiegare la funzione dell’architettura.
+La macchina a stati è un contatore
+Esempi
+Descrivere architettura e le entity principali che lo compongono.
+Entity principali: full subtractor, shifter, comparator, mux , counter
+Dovrei avere 2 registri per salvare Q e R ad ogni iterazione del ciclo.
+If si implementa con  mux pilotato da R  >= D
+Le architecture è preferibile chiamarle RTL oppure struct.
+
+EMAIL BRANDOLESE
+La cosa migliore e che lei mi presenti una specifica, ovvero un documento che descrive
+il problema ed il modo in cui lo si intende affrontare. Per intenderci, ci deve essere almeno
+la definizione dei segnali di interfaccia del componente e dei sottocomponenti principali,
+una breve descrizioni delle funzioni svolte dai moduli principali e una ipotesi su come verificare
+in simulazione la correttezza del progetto mediante test bench.
