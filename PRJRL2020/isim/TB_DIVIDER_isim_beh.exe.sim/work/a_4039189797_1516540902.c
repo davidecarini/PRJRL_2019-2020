@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Xilinx/PRJRL2020/FS.vhd";
+static const char *ng0 = "C:/Users/Utente/Desktop/PRJRL_2019-2020/PRJRL2020/FS.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1605435078_503743352(char *, unsigned char , unsigned char );

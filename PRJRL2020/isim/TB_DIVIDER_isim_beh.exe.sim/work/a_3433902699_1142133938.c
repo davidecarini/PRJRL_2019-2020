@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Xilinx/PRJRL2020/COMPARATOR.vhd";
+static const char *ng0 = "C:/Users/Utente/Desktop/PRJRL_2019-2020/PRJRL2020/COMPARATOR.vhd";
 extern char *IEEE_P_2592010699;
 
 

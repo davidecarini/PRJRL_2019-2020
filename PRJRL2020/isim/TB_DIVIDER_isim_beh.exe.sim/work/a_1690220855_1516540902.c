@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Xilinx/PRJRL2020/DIVIDER.vhd";
+static const char *ng0 = "C:/Users/Utente/Desktop/PRJRL_2019-2020/PRJRL2020/DIVIDER.vhd";
 extern char *IEEE_P_1242562249;
 extern char *IEEE_P_2592010699;
 
@@ -131,7 +131,7 @@ LAB2:    xsi_set_current_line(114, ng0);
 LAB5:    xsi_set_current_line(120, ng0);
     t2 = (t0 + 1672U);
     t6 = *((char **)t2);
-    t2 = (t0 + 9360U);
+    t2 = (t0 + 10260U);
     t13 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t6, t2);
     t14 = (t13 == 0);
     if (t14 != 0)

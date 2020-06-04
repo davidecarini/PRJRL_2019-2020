@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PRJRL2020_new.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="COUNTER_DOWN_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Comparator_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DIVIDER.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DIVIDER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DIVIDER.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="DIVIDER.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DIVIDER.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DIVIDER_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DIVIDER_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DIVIDER_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FS32_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FS32_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Q_RESULT_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="R_RESULT_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_DIVIDER_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_DIVIDER_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_DIVIDER_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_DIVIDER_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1590766620" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1590766620">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1591118772" xil_pn:in_ck="-6694471992378860920" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1591118772">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="COUNTER_DOWN.vhd"/>
+      <outfile xil_pn:name="Comparator.vhd"/>
+      <outfile xil_pn:name="DIVIDER.vhd"/>
+      <outfile xil_pn:name="FS.vhd"/>
+      <outfile xil_pn:name="FS32.vhd"/>
+      <outfile xil_pn:name="Q_RESULT.vhd"/>
+      <outfile xil_pn:name="R_RESULT.vhd"/>
+      <outfile xil_pn:name="TB_DIVIDER.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1590768388" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6007573964930634990" xil_pn:start_ts="1590768388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590768388" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2103061357052624330" xil_pn:start_ts="1590768388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590768388" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1474505310957453908" xil_pn:start_ts="1590768388">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1591118772" xil_pn:in_ck="-6694471992378860920" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1591118772">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="COUNTER_DOWN.vhd"/>
+      <outfile xil_pn:name="Comparator.vhd"/>
+      <outfile xil_pn:name="DIVIDER.vhd"/>
+      <outfile xil_pn:name="FS.vhd"/>
+      <outfile xil_pn:name="FS32.vhd"/>
+      <outfile xil_pn:name="Q_RESULT.vhd"/>
+      <outfile xil_pn:name="R_RESULT.vhd"/>
+      <outfile xil_pn:name="TB_DIVIDER.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1591118778" xil_pn:in_ck="-6694471992378860920" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7288277541023669825" xil_pn:start_ts="1591118772">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_DIVIDER_beh.prj"/>
+      <outfile xil_pn:name="TB_DIVIDER_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1591118779" xil_pn:in_ck="2547291222708367704" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2340395645238504686" xil_pn:start_ts="1591118778">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_DIVIDER_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5828354957419529367" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1474505310957453908" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2426564876058474463" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1110319057739476154" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824436" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8247859020388979806" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824440" xil_pn:in_ck="3988205259945359132" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8039714903727772190" xil_pn:start_ts="1590824436">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="DIVIDER.lso"/>
+      <outfile xil_pn:name="DIVIDER.prj"/>
+      <outfile xil_pn:name="DIVIDER.syr"/>
+      <outfile xil_pn:name="DIVIDER.xst"/>
+      <outfile xil_pn:name="DIVIDER_vhdl.prj"/>
+      <outfile xil_pn:name="DIVIDER_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1590824440" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8215816433280301876" xil_pn:start_ts="1590824440">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:name="TRAN_postSynthesisSimModel">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
+
+</generated_project>

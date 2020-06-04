@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Xilinx/PRJRL2020/COUNTER_DOWN.vhd";
+static const char *ng0 = "C:/Users/Utente/Desktop/PRJRL_2019-2020/PRJRL2020/COUNTER_DOWN.vhd";
 extern char *IEEE_P_3620187407;
 extern char *IEEE_P_1242562249;
 
@@ -74,8 +74,8 @@ LAB6:
 LAB3:    xsi_set_current_line(30, ng0);
     t1 = (t0 + 2152U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6852U);
-    t5 = (t0 + 6920);
+    t1 = (t0 + 7300U);
+    t5 = (t0 + 7368);
     t7 = (t13 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -98,7 +98,7 @@ LAB13:    t1 = (t0 + 4496);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(26, ng0);
-    t1 = (t0 + 6915);
+    t1 = (t0 + 7363);
     t6 = (t0 + 4624);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
@@ -111,7 +111,7 @@ LAB2:    xsi_set_current_line(26, ng0);
 LAB5:    xsi_set_current_line(28, ng0);
     t2 = (t0 + 2152U);
     t6 = *((char **)t2);
-    t2 = (t0 + 6852U);
+    t2 = (t0 + 7300U);
     t7 = ieee_p_3620187407_sub_436351764_3965413181(IEEE_P_3620187407, t13, t6, t2, 1);
     t8 = (t13 + 12U);
     t14 = *((unsigned int *)t8);
@@ -197,7 +197,7 @@ LAB0:    xsi_set_current_line(35, ng0);
 
 LAB3:    t1 = (t0 + 2152U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6852U);
+    t1 = (t0 + 7300U);
     t3 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t2, t1);
     t4 = (t0 + 4816);
     t5 = (t4 + 56U);
@@ -240,7 +240,7 @@ LAB3:    t1 = (t0 + 1352U);
     t2 = *((char **)t1);
     t1 = (t0 + 2152U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6852U);
+    t1 = (t0 + 7300U);
     t4 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t3, t1);
     t5 = (t4 - 31);
     t6 = (t5 * -1);

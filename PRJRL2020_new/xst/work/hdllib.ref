@@ -1,0 +1,9 @@
+AR comparator behv C:/Xilinx/PRJRL2020_new/Comparator.vhd sub00/vhpl05 1590824444
+EN fs NULL C:/Xilinx/PRJRL2020_new/FS.vhd sub00/vhpl00 1590824439
+AR fs rtl C:/Xilinx/PRJRL2020_new/FS.vhd sub00/vhpl01 1590824440
+EN counter_down NULL C:/Xilinx/PRJRL2020_new/COUNTER_DOWN.vhd sub00/vhpl02 1590824441
+EN r_result NULL C:/Xilinx/PRJRL2020_new/R_RESULT.vhd sub00/vhpl08 1590824447
+EN fs32 NULL C:/Xilinx/PRJRL2020_new/FS32.vhd sub00/vhpl06 1590824445
+AR fs32 struct C:/Xilinx/PRJRL2020_new/FS32.vhd sub00/vhpl07 1590824446
+AR counter_down rtl C:/Xilinx/PRJRL2020_new/COUNTER_DOWN.vhd sub00/vhpl03 1590824442
+EN comparator NULL C:/Xilinx/PRJRL2020_new/Comparator.vhd sub00/vhpl04 1590824443

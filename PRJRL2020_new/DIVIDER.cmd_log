@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/PRJRL2020_new/DIVIDER.xst" -ofn "C:/Xilinx/PRJRL2020_new/DIVIDER.syr" 
