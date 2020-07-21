@@ -4,11 +4,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Description of full subtractor
 entity FS is
 	port(
-		A:  in std_logic;
-		B:  in std_logic;
-		C:  in std_logic;
-		D:  out std_logic;
-		B0: out std_logic
+		A:  IN std_logic;
+		B:  IN std_logic;
+		C:  IN std_logic;
+		D:  OUT std_logic;
+		B0: OUT std_logic
 		);
 end FS;
 

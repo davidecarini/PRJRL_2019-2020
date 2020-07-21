@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Xilinx/PRJRL2020_new/FS32.vhd";
+static const char *ng0 = "C:/Users/DAVO_/Desktop/PRJRL_2019-2020/PRJRL2020_new/FS32.vhd";
 
 
 
@@ -36,7 +36,7 @@ static void work_a_0004841870_3708392848_p_0(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(30, ng0);
+LAB0:    xsi_set_current_line(29, ng0);
 
 LAB3:    t1 = (t0 + 9800U);
     t2 = *((char **)t1);
@@ -73,7 +73,7 @@ static void work_a_0004841870_3708392848_p_1(char *t0)
     char *t12;
     char *t13;
 
-LAB0:    xsi_set_current_line(31, ng0);
+LAB0:    xsi_set_current_line(30, ng0);
 
 LAB3:    t1 = (t0 + 10280U);
     t2 = *((char **)t1);

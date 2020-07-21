@@ -1,5 +1,6 @@
 vhdl work "FS.vhd"
 vhdl work "R_RESULT.vhd"
+vhdl work "RESULT.vhd"
 vhdl work "Q_RESULT.vhd"
 vhdl work "FS32.vhd"
 vhdl work "COUNTER_DOWN.vhd"

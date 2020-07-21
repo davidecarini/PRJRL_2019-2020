@@ -5,7 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="804" delta="new" >&quot;<arg fmt="%s" index="1">C:/Xilinx/PRJRL2020_new/R_RESULT.vhd</arg>&quot; Line <arg fmt="%d" index="2">26</arg>. Size of <arg fmt="%s" index="3">concat operation</arg> is different than size of <arg fmt="%s" index="4">the target</arg>.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/DAVO_/Desktop/PRJRL_2019-2020/PRJRL2020_new/DIVIDER.vhd</arg>&quot; line <arg fmt="%d" index="2">135</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">B0</arg>&apos; of component &apos;<arg fmt="%s" index="4">FS32</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1432" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">temp_register</arg>&gt; may be accessed with a negative index, causing simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">temp_register</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 </messages>

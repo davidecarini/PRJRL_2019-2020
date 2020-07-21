@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Xilinx/PRJRL2020_new/Comparator.vhd";
+static const char *ng0 = "C:/Users/DAVO_/Desktop/PRJRL_2019-2020/PRJRL2020_new/Comparator.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -38,7 +38,7 @@ static void work_a_3433902699_1142133938_p_0(char *t0)
     char *t8;
     char *t9;
 
-LAB0:    xsi_set_current_line(16, ng0);
+LAB0:    xsi_set_current_line(17, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
     t1 = (t0 + 1192U);
@@ -48,7 +48,7 @@ LAB0:    xsi_set_current_line(16, ng0);
     if (t4 != 0)
         goto LAB2;
 
-LAB4:    xsi_set_current_line(19, ng0);
+LAB4:    xsi_set_current_line(20, ng0);
     t1 = (t0 + 3032);
     t2 = (t1 + 56U);
     t3 = *((char **)t2);
@@ -61,7 +61,7 @@ LAB3:    t1 = (t0 + 2952);
     *((int *)t1) = 1;
 
 LAB1:    return;
-LAB2:    xsi_set_current_line(17, ng0);
+LAB2:    xsi_set_current_line(18, ng0);
     t5 = (t0 + 3032);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);

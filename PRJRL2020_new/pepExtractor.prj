@@ -1,1 +1,2 @@
-work	"DIVIDER.vhd"
+work	"FS.vhd"
+work	"FS32.vhd"

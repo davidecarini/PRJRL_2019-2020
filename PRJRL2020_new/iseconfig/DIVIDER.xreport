@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-06-04T09:24:14</DateModified>
+  <DateModified>2020-07-17T15:06:43</DateModified>
   <ModuleName>DIVIDER</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Xilinx/PRJRL2020_new/iseconfig/DIVIDER.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Xilinx/PRJRL2020_new\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/DAVO_/Desktop/PRJRL_2019-2020/PRJRL2020_new/iseconfig/DIVIDER.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/DAVO_/Desktop/PRJRL_2019-2020/PRJRL2020_new\</ImplementationReportsDirectory>
   <DateInitialized>2020-05-30T09:21:09</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
