@@ -1,7 +1,0 @@
-vhdl work "FS.vhd"
-vhdl work "left_shifter.vhd"
-vhdl work "FS32.vhd"
-vhdl work "COUNTER_DOWN.vhd"
-vhdl work "COMPARATOR.vhd"
-vhdl work "DIVIDER.vhd"
-vhdl work "TB_DIVIDER.vhd"

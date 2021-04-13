@@ -1,5 +1,0 @@
-set -tmpdir "C:/Xilinx/PRJRL2020/xst/projnav.tmp"
-set -xsthdpdir "C:/Xilinx/PRJRL2020/xst"
-elaborate
--ifn FA.prj
--ifmt mixed

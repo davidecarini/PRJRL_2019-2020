@@ -1,3 +1,0 @@
-vhdl isim_temp "FS.vhd"
-vhdl isim_temp "FS32.vhd"
-vhdl isim_temp "TB_FS32.vhd"
