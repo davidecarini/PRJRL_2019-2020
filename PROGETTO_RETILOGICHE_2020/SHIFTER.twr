@@ -1,0 +1,121 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml SHIFTER.twx SHIFTER.ncd -o SHIFTER.twr SHIFTER.pcf
+
+Design file:              SHIFTER.ncd
+Physical constraint file: SHIFTER.pcf
+Device,package,speed:     xc3s200,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+R<0>           |R_SHIFTED_0<1> |    6.062|
+R<0>           |R_SHIFTED_1<1> |    7.063|
+R<1>           |R_SHIFTED_0<2> |    7.677|
+R<1>           |R_SHIFTED_1<2> |    5.760|
+R<2>           |R_SHIFTED_0<3> |    6.070|
+R<2>           |R_SHIFTED_1<3> |    7.558|
+R<3>           |R_SHIFTED_0<4> |    7.218|
+R<3>           |R_SHIFTED_1<4> |    8.325|
+R<4>           |R_SHIFTED_0<5> |    6.167|
+R<4>           |R_SHIFTED_1<5> |    7.342|
+R<5>           |R_SHIFTED_0<6> |    5.775|
+R<5>           |R_SHIFTED_1<6> |    6.587|
+R<6>           |R_SHIFTED_0<7> |    5.790|
+R<6>           |R_SHIFTED_1<7> |    8.492|
+R<7>           |R_SHIFTED_0<8> |    6.683|
+R<7>           |R_SHIFTED_1<8> |    9.620|
+R<8>           |R_SHIFTED_0<9> |    6.082|
+R<8>           |R_SHIFTED_1<9> |    6.082|
+R<9>           |R_SHIFTED_0<10>|    6.240|
+R<9>           |R_SHIFTED_1<10>|    8.758|
+R<10>          |R_SHIFTED_0<11>|    5.731|
+R<10>          |R_SHIFTED_1<11>|    8.382|
+R<11>          |R_SHIFTED_0<12>|    7.052|
+R<11>          |R_SHIFTED_1<12>|    9.272|
+R<12>          |R_SHIFTED_0<13>|    5.799|
+R<12>          |R_SHIFTED_1<13>|    6.426|
+R<13>          |R_SHIFTED_0<14>|    5.790|
+R<13>          |R_SHIFTED_1<14>|    7.628|
+R<14>          |R_SHIFTED_0<15>|    6.803|
+R<14>          |R_SHIFTED_1<15>|    5.765|
+R<15>          |R_SHIFTED_0<16>|    6.474|
+R<15>          |R_SHIFTED_1<16>|    6.064|
+R<16>          |R_SHIFTED_0<17>|    5.775|
+R<16>          |R_SHIFTED_1<17>|    6.111|
+R<17>          |R_SHIFTED_0<18>|    8.508|
+R<17>          |R_SHIFTED_1<18>|    8.850|
+R<18>          |R_SHIFTED_0<19>|    8.062|
+R<18>          |R_SHIFTED_1<19>|    8.370|
+R<19>          |R_SHIFTED_0<20>|    7.390|
+R<19>          |R_SHIFTED_1<20>|    8.012|
+R<20>          |R_SHIFTED_0<21>|    7.877|
+R<20>          |R_SHIFTED_1<21>|    9.105|
+R<21>          |R_SHIFTED_0<22>|    6.401|
+R<21>          |R_SHIFTED_1<22>|    6.700|
+R<22>          |R_SHIFTED_0<23>|    8.775|
+R<22>          |R_SHIFTED_1<23>|    9.342|
+R<23>          |R_SHIFTED_0<24>|    8.177|
+R<23>          |R_SHIFTED_1<24>|    7.817|
+R<24>          |R_SHIFTED_0<25>|    7.534|
+R<24>          |R_SHIFTED_1<25>|    7.984|
+R<25>          |R_SHIFTED_0<26>|    8.635|
+R<25>          |R_SHIFTED_1<26>|    9.380|
+R<26>          |R_SHIFTED_0<27>|    7.422|
+R<26>          |R_SHIFTED_1<27>|    8.425|
+R<27>          |R_SHIFTED_0<28>|    7.864|
+R<27>          |R_SHIFTED_1<28>|    8.198|
+R<28>          |R_SHIFTED_0<29>|    6.651|
+R<28>          |R_SHIFTED_1<29>|    5.771|
+R<29>          |R_SHIFTED_0<30>|    5.772|
+R<29>          |R_SHIFTED_1<30>|    5.778|
+R<30>          |R_SHIFTED_0<31>|    5.790|
+R<30>          |R_SHIFTED_1<31>|    5.775|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 07 09:38:33 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4489 MB
+
+
+

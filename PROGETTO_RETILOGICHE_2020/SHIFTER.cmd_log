@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "SHIFTER.ngc" SHIFTER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o SHIFTER_map.ncd SHIFTER.ngd SHIFTER.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTER_map.ncd SHIFTER.ncd SHIFTER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SHIFTER.twx SHIFTER.ncd -o SHIFTER.twr SHIFTER.pcf 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "SHIFTER.ngc" SHIFTER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o SHIFTER_map.ncd SHIFTER.ngd SHIFTER.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTER_map.ncd SHIFTER.ncd SHIFTER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SHIFTER.twx SHIFTER.ncd -o SHIFTER.twr SHIFTER.pcf 
+netgen -intstyle ise -s 5  -pcf SHIFTER.pcf -rpw 100 -tpw 0 -ar Structure -tm SHIFTER -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim SHIFTER.ncd SHIFTER_timesim.vhd 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.syr" 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.syr" 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/SHIFTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "SHIFTER.ngc" SHIFTER.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o SHIFTER_map.ncd SHIFTER.ngd SHIFTER.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTER_map.ncd SHIFTER.ncd SHIFTER.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SHIFTER.twx SHIFTER.ncd -o SHIFTER.twr SHIFTER.pcf 

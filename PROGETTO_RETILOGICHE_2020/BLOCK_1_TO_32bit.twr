@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml BLOCK_1_TO_32bit.twx BLOCK_1_TO_32bit.ncd -o
+BLOCK_1_TO_32bit.twr BLOCK_1_TO_32bit.pcf
+
+Design file:              BLOCK_1_TO_32bit.ncd
+Physical constraint file: BLOCK_1_TO_32bit.pcf
+Device,package,speed:     xc3s200,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+IN_1bit        |OUT_32bit<0>   |    8.415|
+IN_1bit        |OUT_32bit<1>   |    8.415|
+IN_1bit        |OUT_32bit<2>   |    8.414|
+IN_1bit        |OUT_32bit<3>   |    8.414|
+IN_1bit        |OUT_32bit<4>   |    8.065|
+IN_1bit        |OUT_32bit<5>   |    7.753|
+IN_1bit        |OUT_32bit<6>   |    8.024|
+IN_1bit        |OUT_32bit<7>   |    7.713|
+IN_1bit        |OUT_32bit<8>   |    8.323|
+IN_1bit        |OUT_32bit<9>   |    7.100|
+IN_1bit        |OUT_32bit<10>  |    7.755|
+IN_1bit        |OUT_32bit<11>  |    8.073|
+IN_1bit        |OUT_32bit<12>  |    8.071|
+IN_1bit        |OUT_32bit<13>  |    8.083|
+IN_1bit        |OUT_32bit<14>  |    8.071|
+IN_1bit        |OUT_32bit<15>  |    8.051|
+IN_1bit        |OUT_32bit<16>  |    8.078|
+IN_1bit        |OUT_32bit<17>  |    8.359|
+IN_1bit        |OUT_32bit<18>  |    7.770|
+IN_1bit        |OUT_32bit<19>  |    8.359|
+IN_1bit        |OUT_32bit<20>  |    8.341|
+IN_1bit        |OUT_32bit<21>  |    7.769|
+IN_1bit        |OUT_32bit<22>  |    7.740|
+IN_1bit        |OUT_32bit<23>  |    7.762|
+IN_1bit        |OUT_32bit<24>  |    7.740|
+IN_1bit        |OUT_32bit<25>  |    8.056|
+IN_1bit        |OUT_32bit<26>  |    8.078|
+IN_1bit        |OUT_32bit<27>  |    6.698|
+IN_1bit        |OUT_32bit<28>  |    6.072|
+IN_1bit        |OUT_32bit<29>  |    5.760|
+IN_1bit        |OUT_32bit<30>  |    6.072|
+IN_1bit        |OUT_32bit<31>  |    5.779|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 07 10:13:26 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4489 MB
+
+
+

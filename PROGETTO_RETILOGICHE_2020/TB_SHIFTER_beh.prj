@@ -1,0 +1,2 @@
+vhdl work "SHIFTER.vhd"
+vhdl work "TB_SHIFTER.vhd"

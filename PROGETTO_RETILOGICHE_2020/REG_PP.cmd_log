@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/REG_PP.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/REG_PP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "REG_PP.ngc" REG_PP.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o REG_PP_map.ncd REG_PP.ngd REG_PP.pcf 
+par -w -intstyle ise -ol high -t 1 REG_PP_map.ncd REG_PP.ncd REG_PP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml REG_PP.twx REG_PP.ncd -o REG_PP.twr REG_PP.pcf 

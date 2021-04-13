@@ -1,0 +1,3 @@
+vhdl work "FS.vhd"
+vhdl work "FS_Nbit.vhd"
+vhdl work "COUNTER.vhd"

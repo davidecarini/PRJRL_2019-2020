@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/TB_DIVIDER_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_divider" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tb_divider/tb_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_reset</obj_property>
+      <obj_property name="ObjectShortName">tb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_start</obj_property>
+      <obj_property name="ObjectShortName">tb_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_n[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_d[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_q[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_r[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_done</obj_property>
+      <obj_property name="ObjectShortName">tb_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_error</obj_property>
+      <obj_property name="ObjectShortName">tb_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/size" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">size</obj_property>
+      <obj_property name="ObjectShortName">size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/half_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">half_clk_period</obj_property>
+      <obj_property name="ObjectShortName">half_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/max_delay" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">max_delay</obj_property>
+      <obj_property name="ObjectShortName">max_delay</obj_property>
+   </wvobject>
+</wave_config>

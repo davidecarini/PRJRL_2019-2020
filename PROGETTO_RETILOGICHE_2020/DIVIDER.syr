@@ -1,0 +1,733 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.40 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.40 secs
+ 
+--> Reading design: DIVIDER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DIVIDER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DIVIDER"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-pq208
+
+---- Source Options
+Top Module Name                    : DIVIDER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS.vhd" in Library work.
+Architecture rtl of Entity fs is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.vhd" in Library work.
+Architecture rtl of Entity block_1_to_32bit is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/AND.vhd" in Library work.
+Architecture rtl of Entity and_nbit is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/OR.vhd" in Library work.
+Architecture rtl of Entity or_nbit is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/XOR.vhd" in Library work.
+Architecture rtl of Entity xor_nbit is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS_Nbit.vhd" in Library work.
+Architecture rtl of Entity fs_nbit is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/COUNTER_CONTROLLER.vhd" in Library work.
+Architecture rtl of Entity counter_controller is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FFD.vhd" in Library work.
+Architecture rtl of Entity ffd is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/SHIFTER.vhd" in Library work.
+Architecture rtl of Entity shifter is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_2_1.vhd" in Library work.
+Architecture rtl of Entity mux_2_1 is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/REG_PP.vhd" in Library work.
+Architecture rtl of Entity reg_pp is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FDD_DETECT_LEVEL.vhd" in Library work.
+Architecture rtl of Entity ffd_detect_level is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/COUNTER.vhd" in Library work.
+Architecture rtl of Entity counter is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd" in Library work.
+Architecture rtl of Entity mux_32_1 is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/BLOCK_ERROR_CHECK.vhd" in Library work.
+Architecture rtl of Entity block_error_check is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/DECODER_5_32.vhd" in Library work.
+Architecture rtl of Entity decoder_5_32 is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/BLOCK_ASSIGNMENT_Q.vhd" in Library work.
+Architecture rtl of Entity block_assignment_q is up to date.
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/DIVIDER.vhd" in Library work.
+Architecture rtl of Entity divider is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DIVIDER> in library <work> (architecture <rtl>) with generics.
+	SIZE = 32
+	SIZE_COUNT = 5
+
+Analyzing hierarchy for entity <SHIFTER> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <MUX_2_1> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <FS_Nbit> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <REG_PP> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <FFD> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <FFD_DETECT_LEVEL> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <COUNTER> in library <work> (architecture <rtl>) with generics.
+	N = 5
+
+Analyzing hierarchy for entity <MUX_32_1> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <BLOCK_ERROR_CHECK> in library <work> (architecture <rtl>) with generics.
+	SIZE = 32
+
+Analyzing hierarchy for entity <DECODER_5_32> in library <work> (architecture <rtl>) with generics.
+	N_IN = 5
+	N_OUT = 32
+
+Analyzing hierarchy for entity <BLOCK_ASSIGNMENT_Q> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <FS> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <FS_Nbit> in library <work> (architecture <rtl>) with generics.
+	N = 5
+
+Analyzing hierarchy for entity <COUNTER_CONTROLLER> in library <work> (architecture <rtl>) with generics.
+	N = 5
+
+Analyzing hierarchy for entity <XOR_Nbit> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <AND_Nbit> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <BLOCK_1_TO_32bit> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <OR_Nbit> in library <work> (architecture <rtl>) with generics.
+	N = 32
+
+Analyzing hierarchy for entity <FS> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <DIVIDER> in library <work> (Architecture <rtl>).
+	SIZE = 32
+	SIZE_COUNT = 5
+Entity <DIVIDER> analyzed. Unit <DIVIDER> generated.
+
+Analyzing generic Entity <SHIFTER> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <SHIFTER> analyzed. Unit <SHIFTER> generated.
+
+Analyzing generic Entity <MUX_2_1> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <MUX_2_1> analyzed. Unit <MUX_2_1> generated.
+
+Analyzing generic Entity <FS_Nbit.1> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <FS_Nbit.1> analyzed. Unit <FS_Nbit.1> generated.
+
+Analyzing Entity <FS> in library <work> (Architecture <rtl>).
+Entity <FS> analyzed. Unit <FS> generated.
+
+Analyzing generic Entity <REG_PP> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <REG_PP> analyzed. Unit <REG_PP> generated.
+
+Analyzing Entity <FFD> in library <work> (Architecture <rtl>).
+Entity <FFD> analyzed. Unit <FFD> generated.
+
+Analyzing Entity <FFD_DETECT_LEVEL> in library <work> (Architecture <rtl>).
+Entity <FFD_DETECT_LEVEL> analyzed. Unit <FFD_DETECT_LEVEL> generated.
+
+Analyzing generic Entity <COUNTER> in library <work> (Architecture <rtl>).
+	N = 5
+WARNING:Xst:753 - "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/COUNTER.vhd" line 59: Unconnected output port 'BOUT' of component 'FS_Nbit'.
+Entity <COUNTER> analyzed. Unit <COUNTER> generated.
+
+Analyzing generic Entity <FS_Nbit.2> in library <work> (Architecture <rtl>).
+	N = 5
+Entity <FS_Nbit.2> analyzed. Unit <FS_Nbit.2> generated.
+
+Analyzing generic Entity <COUNTER_CONTROLLER> in library <work> (Architecture <rtl>).
+	N = 5
+Entity <COUNTER_CONTROLLER> analyzed. Unit <COUNTER_CONTROLLER> generated.
+
+Analyzing Entity <MUX_32_1> in library <work> (Architecture <rtl>).
+Entity <MUX_32_1> analyzed. Unit <MUX_32_1> generated.
+
+Analyzing generic Entity <BLOCK_ERROR_CHECK> in library <work> (Architecture <rtl>).
+	SIZE = 32
+Entity <BLOCK_ERROR_CHECK> analyzed. Unit <BLOCK_ERROR_CHECK> generated.
+
+Analyzing generic Entity <XOR_Nbit> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <XOR_Nbit> analyzed. Unit <XOR_Nbit> generated.
+
+Analyzing generic Entity <AND_Nbit> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <AND_Nbit> analyzed. Unit <AND_Nbit> generated.
+
+Analyzing generic Entity <DECODER_5_32> in library <work> (Architecture <rtl>).
+	N_IN = 5
+	N_OUT = 32
+Entity <DECODER_5_32> analyzed. Unit <DECODER_5_32> generated.
+
+Analyzing generic Entity <BLOCK_ASSIGNMENT_Q> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <BLOCK_ASSIGNMENT_Q> analyzed. Unit <BLOCK_ASSIGNMENT_Q> generated.
+
+Analyzing generic Entity <BLOCK_1_TO_32bit> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <BLOCK_1_TO_32bit> analyzed. Unit <BLOCK_1_TO_32bit> generated.
+
+Analyzing generic Entity <OR_Nbit> in library <work> (Architecture <rtl>).
+	N = 32
+Entity <OR_Nbit> analyzed. Unit <OR_Nbit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SHIFTER>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/SHIFTER.vhd".
+WARNING:Xst:647 - Input <R<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <SHIFTER> synthesized.
+
+
+Synthesizing Unit <MUX_2_1>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_2_1.vhd".
+Unit <MUX_2_1> synthesized.
+
+
+Synthesizing Unit <FFD>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FFD.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FFD> synthesized.
+
+
+Synthesizing Unit <FFD_DETECT_LEVEL>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FDD_DETECT_LEVEL.vhd".
+    Found 1-bit register for signal <temp_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FFD_DETECT_LEVEL> synthesized.
+
+
+Synthesizing Unit <MUX_32_1>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd".
+    Found 1-bit 32-to-1 multiplexer for signal <OUT1>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX_32_1> synthesized.
+
+
+Synthesizing Unit <DECODER_5_32>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/DECODER_5_32.vhd".
+    Found 1-of-32 decoder for signal <OUT1>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <DECODER_5_32> synthesized.
+
+
+Synthesizing Unit <FS>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS.vhd".
+    Found 1-bit xor3 for signal <SUB>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <FS> synthesized.
+
+
+Synthesizing Unit <COUNTER_CONTROLLER>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/COUNTER_CONTROLLER.vhd".
+    Found 1-bit register for signal <end_count>.
+    Found 1-bit register for signal <run_count>.
+    Found 5-bit register for signal <t_count>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <COUNTER_CONTROLLER> synthesized.
+
+
+Synthesizing Unit <XOR_Nbit>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/XOR.vhd".
+    Found 32-bit xor2 for signal <OUT1>.
+Unit <XOR_Nbit> synthesized.
+
+
+Synthesizing Unit <AND_Nbit>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/AND.vhd".
+Unit <AND_Nbit> synthesized.
+
+
+Synthesizing Unit <BLOCK_1_TO_32bit>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.vhd".
+Unit <BLOCK_1_TO_32bit> synthesized.
+
+
+Synthesizing Unit <OR_Nbit>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/OR.vhd".
+Unit <OR_Nbit> synthesized.
+
+
+Synthesizing Unit <FS_Nbit_1>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS_Nbit.vhd".
+Unit <FS_Nbit_1> synthesized.
+
+
+Synthesizing Unit <REG_PP>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/REG_PP.vhd".
+Unit <REG_PP> synthesized.
+
+
+Synthesizing Unit <BLOCK_ERROR_CHECK>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/BLOCK_ERROR_CHECK.vhd".
+Unit <BLOCK_ERROR_CHECK> synthesized.
+
+
+Synthesizing Unit <BLOCK_ASSIGNMENT_Q>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/BLOCK_ASSIGNMENT_Q.vhd".
+Unit <BLOCK_ASSIGNMENT_Q> synthesized.
+
+
+Synthesizing Unit <FS_Nbit_2>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS_Nbit.vhd".
+Unit <FS_Nbit_2> synthesized.
+
+
+Synthesizing Unit <COUNTER>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/COUNTER.vhd".
+Unit <COUNTER> synthesized.
+
+
+Synthesizing Unit <DIVIDER>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/DIVIDER.vhd".
+Unit <DIVIDER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 69
+ 1-bit register                                        : 68
+ 5-bit register                                        : 1
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+# Decoders                                             : 1
+ 1-of-32 decoder                                       : 1
+# Xors                                                 : 38
+ 1-bit xor3                                            : 37
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+# Decoders                                             : 1
+ 1-of-32 decoder                                       : 1
+# Xors                                                 : 38
+ 1-bit xor3                                            : 37
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DIVIDER> ...
+
+Optimizing unit <COUNTER_CONTROLLER> ...
+
+Optimizing unit <FS_Nbit_1> ...
+
+Optimizing unit <REG_PP> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DIVIDER, actual ratio is 4.
+FlipFlop inst_COUNTER/inst_COUNTER_CONTROLLER/t_count_0 has been replicated 1 time(s)
+FlipFlop inst_COUNTER/inst_COUNTER_CONTROLLER/t_count_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DIVIDER.ngr
+Top Level Output File Name         : DIVIDER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 133
+
+Cell Usage :
+# BELS                             : 326
+#      GND                         : 1
+#      LUT2                        : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 71
+#      LUT3_D                      : 7
+#      LUT3_L                      : 11
+#      LUT4                        : 157
+#      LUT4_D                      : 9
+#      LUT4_L                      : 2
+#      MUXCY                       : 24
+#      MUXF5                       : 32
+#      MUXF6                       : 4
+#      MUXF7                       : 2
+#      MUXF8                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 75
+#      FDR                         : 2
+#      FDRE                        : 65
+#      FDRS                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 132
+#      IBUF                        : 66
+#      OBUF                        : 66
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-5 
+
+ Number of Slices:                      135  out of   1920     7%  
+ Number of Slice Flip Flops:             75  out of   3840     1%  
+ Number of 4 input LUTs:                261  out of   3840     6%  
+ Number of IOs:                         133
+ Number of bonded IOBs:                 133  out of    141    94%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 75    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.041ns (Maximum Frequency: 99.587MHz)
+   Minimum input arrival time before clock: 10.350ns
+   Maximum output required time after clock: 9.691ns
+   Maximum combinational path delay: 9.745ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 10.041ns (frequency: 99.587MHz)
+  Total number of paths / destination ports: 16065 / 211
+-------------------------------------------------------------------------
+Delay:               10.041ns (Levels of Logic = 7)
+  Source:            inst_REGISTER_R/FFDs[13].FFDReg/Q (FF)
+  Destination:       inst_REGISTER_R/FFDs[25].FFDReg/Q (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: inst_REGISTER_R/FFDs[13].FFDReg/Q to inst_REGISTER_R/FFDs[25].FFDReg/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.626   0.876  inst_REGISTER_R/FFDs[13].FFDReg/Q (inst_REGISTER_R/FFDs[13].FFDReg/Q)
+     LUT4:I3->O            3   0.479   0.771  inst_FS32/G1[14].FSN/BOUT1_SW1 (N42)
+     MUXF5:S->O            2   0.540   1.040  inst_FS32/G1[16].FSN/Mxor_SUB_xo<0>11_SW1 (N139)
+     LUT3:I0->O            6   0.479   1.023  inst_FS32/G1[14].FSN/Mxor_SUB_xo<0>11_SW0 (N159)
+     LUT3:I1->O            1   0.479   0.000  inst_FS32/G1[18].FSN/Mxor_SUB_xo<0>11_F (N268)
+     MUXF5:I0->O          13   0.314   1.053  inst_FS32/G1[18].FSN/Mxor_SUB_xo<0>11 (inst_FS32/N8)
+     LUT3_D:I2->O         18   0.479   1.227  inst_FS32/G1[31].FSN/BOUT1_2 (inst_FS32/G1[31].FSN/BOUT11)
+     LUT4:I3->O            1   0.479   0.000  inst_MUX_postSUB/OUT1<8>1 (temp_R<8>)
+     FDRE:D                    0.176          inst_REGISTER_R/FFDs[8].FFDReg/Q
+    ----------------------------------------
+    Total                     10.041ns (4.051ns logic, 5.990ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 16018 / 148
+-------------------------------------------------------------------------
+Offset:              10.350ns (Levels of Logic = 8)
+  Source:            D<16> (PAD)
+  Destination:       inst_REGISTER_R/FFDs[25].FFDReg/Q (FF)
+  Destination Clock: CLK rising
+
+  Data Path: D<16> to inst_REGISTER_R/FFDs[25].FFDReg/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  D_16_IBUF (D_16_IBUF)
+     LUT4:I0->O            1   0.479   0.851  inst_FS32/G1[16].FSN/BOUT1_SW0 (N38)
+     LUT3:I1->O            2   0.479   0.915  inst_FS32/G1[16].FSN/Mxor_SUB_xo<0>11_SW0 (N138)
+     LUT3:I1->O            6   0.479   1.023  inst_FS32/G1[14].FSN/Mxor_SUB_xo<0>11_SW0 (N159)
+     LUT3:I1->O            1   0.479   0.000  inst_FS32/G1[18].FSN/Mxor_SUB_xo<0>11_F (N268)
+     MUXF5:I0->O          13   0.314   1.053  inst_FS32/G1[18].FSN/Mxor_SUB_xo<0>11 (inst_FS32/N8)
+     LUT3_D:I2->O         18   0.479   1.227  inst_FS32/G1[31].FSN/BOUT1_2 (inst_FS32/G1[31].FSN/BOUT11)
+     LUT4:I3->O            1   0.479   0.000  inst_MUX_postSUB/OUT1<8>1 (temp_R<8>)
+     FDRE:D                    0.176          inst_REGISTER_R/FFDs[8].FFDReg/Q
+    ----------------------------------------
+    Total                     10.350ns (4.079ns logic, 6.271ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 129 / 66
+-------------------------------------------------------------------------
+Offset:              9.691ns (Levels of Logic = 26)
+  Source:            inst_REGISTER_R/FFDs[12].FFDReg/Q (FF)
+  Destination:       ERROR (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: inst_REGISTER_R/FFDs[12].FFDReg/Q to ERROR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.626   1.076  inst_REGISTER_R/FFDs[12].FFDReg/Q (inst_REGISTER_R/FFDs[12].FFDReg/Q)
+     LUT4:I1->O            1   0.479   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_lut<0> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<0> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<1> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<2> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<3> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<4> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<5> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<6> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<7> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<8> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<9> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<10> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<11> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<12> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<13> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<14> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<15> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<16> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<17> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<18> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<19> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<20> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<21> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<22> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<22>)
+     MUXCY:CI->O           1   0.265   0.681  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<23> (ERROR_OBUF)
+     OBUF:I->O                 4.909          ERROR_OBUF (ERROR)
+    ----------------------------------------
+    Total                      9.691ns (7.935ns logic, 1.757ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 32 / 1
+-------------------------------------------------------------------------
+Delay:               9.745ns (Levels of Logic = 27)
+  Source:            N<12> (PAD)
+  Destination:       ERROR (PAD)
+
+  Data Path: N<12> to ERROR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  N_12_IBUF (N_12_IBUF)
+     LUT4:I0->O            1   0.479   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_lut<0> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<0> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<1> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<2> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<3> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<4> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<5> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<6> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<7> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<8> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<9> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<10> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<11> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<12> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<13> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<14> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<15> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<16> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<17> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<18> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<19> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<20> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<21> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<22> (inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<22>)
+     MUXCY:CI->O           1   0.265   0.681  inst_CHECK_ERROR/ERROR_cmp_eq0000_wg_cy<23> (ERROR_OBUF)
+     OBUF:I->O                 4.909          ERROR_OBUF (ERROR)
+    ----------------------------------------
+    Total                      9.745ns (8.024ns logic, 1.721ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 35.00 secs
+Total CPU time to Xst completion: 34.60 secs
+ 
+--> 
+
+Total memory usage is 4552968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

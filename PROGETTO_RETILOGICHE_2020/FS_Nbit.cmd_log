@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.syr" 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "FS_Nbit.ngc" FS_Nbit.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o FS_Nbit_map.ncd FS_Nbit.ngd FS_Nbit.pcf 
+par -w -intstyle ise -ol high -t 1 FS_Nbit_map.ncd FS_Nbit.ncd FS_Nbit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml FS_Nbit.twx FS_Nbit.ncd -o FS_Nbit.twr FS_Nbit.pcf 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "FS_Nbit.ngc" FS_Nbit.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o FS_Nbit_map.ncd FS_Nbit.ngd FS_Nbit.pcf 
+par -w -intstyle ise -ol high -t 1 FS_Nbit_map.ncd FS_Nbit.ncd FS_Nbit.pcf 
+netgen -intstyle ise -s 5  -pcf FS_Nbit.pcf -rpw 100 -tpw 0 -ar Structure -tm FS_Nbit -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim FS_Nbit.ncd FS_Nbit_timesim.vhd 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/FS_Nbit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "FS_Nbit.ngc" FS_Nbit.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o FS_Nbit_map.ncd FS_Nbit.ngd FS_Nbit.pcf 
+par -w -intstyle ise -ol high -t 1 FS_Nbit_map.ncd FS_Nbit.ncd FS_Nbit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml FS_Nbit.twx FS_Nbit.ncd -o FS_Nbit.twr FS_Nbit.pcf 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS_Nbit.xst" -ofn "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/FS_Nbit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 FS_Nbit.ngc FS_Nbit.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o FS_Nbit_map.ncd FS_Nbit.ngd FS_Nbit.pcf 
+par -w -intstyle ise -ol high -t 1 FS_Nbit_map.ncd FS_Nbit.ncd FS_Nbit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml FS_Nbit.twx FS_Nbit.ncd -o FS_Nbit.twr FS_Nbit.pcf 

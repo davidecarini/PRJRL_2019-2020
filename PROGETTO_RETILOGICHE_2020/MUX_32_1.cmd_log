@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.xst" -ofn "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 MUX_32_1.ngc MUX_32_1.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o MUX_32_1_map.ncd MUX_32_1.ngd MUX_32_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX_32_1_map.ncd MUX_32_1.ncd MUX_32_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX_32_1.twx MUX_32_1.ncd -o MUX_32_1.twr MUX_32_1.pcf 

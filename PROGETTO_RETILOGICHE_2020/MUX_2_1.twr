@@ -1,0 +1,155 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml MUX_2_1.twx MUX_2_1.ncd -o MUX_2_1.twr MUX_2_1.pcf
+
+Design file:              MUX_2_1.ncd
+Physical constraint file: MUX_2_1.pcf
+Device,package,speed:     xc3s200,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+IN1<0>         |OUT1<0>        |    7.875|
+IN1<1>         |OUT1<1>        |    7.333|
+IN1<2>         |OUT1<2>        |    9.658|
+IN1<3>         |OUT1<3>        |    7.824|
+IN1<4>         |OUT1<4>        |    7.352|
+IN1<5>         |OUT1<5>        |    7.326|
+IN1<6>         |OUT1<6>        |    6.897|
+IN1<7>         |OUT1<7>        |    7.858|
+IN1<8>         |OUT1<8>        |    8.427|
+IN1<9>         |OUT1<9>        |    7.298|
+IN1<10>        |OUT1<10>       |    9.381|
+IN1<11>        |OUT1<11>       |    8.850|
+IN1<12>        |OUT1<12>       |    8.257|
+IN1<13>        |OUT1<13>       |    9.047|
+IN1<14>        |OUT1<14>       |    8.747|
+IN1<15>        |OUT1<15>       |    7.545|
+IN1<16>        |OUT1<16>       |    9.714|
+IN1<17>        |OUT1<17>       |    8.684|
+IN1<18>        |OUT1<18>       |    9.817|
+IN1<19>        |OUT1<19>       |    9.606|
+IN1<20>        |OUT1<20>       |    7.092|
+IN1<21>        |OUT1<21>       |    8.910|
+IN1<22>        |OUT1<22>       |    9.882|
+IN1<23>        |OUT1<23>       |    8.092|
+IN1<24>        |OUT1<24>       |    7.264|
+IN1<25>        |OUT1<25>       |    9.722|
+IN1<26>        |OUT1<26>       |    9.824|
+IN1<27>        |OUT1<27>       |    9.585|
+IN1<28>        |OUT1<28>       |    9.063|
+IN1<29>        |OUT1<29>       |    9.162|
+IN1<30>        |OUT1<30>       |    7.788|
+IN1<31>        |OUT1<31>       |    8.601|
+IN2<0>         |OUT1<0>        |    8.300|
+IN2<1>         |OUT1<1>        |    6.855|
+IN2<2>         |OUT1<2>        |    9.114|
+IN2<3>         |OUT1<3>        |    7.673|
+IN2<4>         |OUT1<4>        |    7.115|
+IN2<5>         |OUT1<5>        |    8.440|
+IN2<6>         |OUT1<6>        |    8.874|
+IN2<7>         |OUT1<7>        |    9.868|
+IN2<8>         |OUT1<8>        |    9.366|
+IN2<9>         |OUT1<9>        |    9.730|
+IN2<10>        |OUT1<10>       |    9.511|
+IN2<11>        |OUT1<11>       |    9.683|
+IN2<12>        |OUT1<12>       |    8.272|
+IN2<13>        |OUT1<13>       |    9.525|
+IN2<14>        |OUT1<14>       |    9.180|
+IN2<15>        |OUT1<15>       |    7.872|
+IN2<16>        |OUT1<16>       |    9.451|
+IN2<17>        |OUT1<17>       |    8.209|
+IN2<18>        |OUT1<18>       |    9.520|
+IN2<19>        |OUT1<19>       |   10.032|
+IN2<20>        |OUT1<20>       |    7.601|
+IN2<21>        |OUT1<21>       |    8.986|
+IN2<22>        |OUT1<22>       |    9.648|
+IN2<23>        |OUT1<23>       |    8.216|
+IN2<24>        |OUT1<24>       |    7.782|
+IN2<25>        |OUT1<25>       |    9.315|
+IN2<26>        |OUT1<26>       |    9.446|
+IN2<27>        |OUT1<27>       |    9.985|
+IN2<28>        |OUT1<28>       |    8.477|
+IN2<29>        |OUT1<29>       |    9.394|
+IN2<30>        |OUT1<30>       |    8.948|
+IN2<31>        |OUT1<31>       |    8.513|
+S              |OUT1<0>        |    8.782|
+S              |OUT1<1>        |    7.649|
+S              |OUT1<2>        |   10.777|
+S              |OUT1<3>        |    8.862|
+S              |OUT1<4>        |    7.095|
+S              |OUT1<5>        |   11.953|
+S              |OUT1<6>        |   11.281|
+S              |OUT1<7>        |    8.261|
+S              |OUT1<8>        |   12.409|
+S              |OUT1<9>        |    7.910|
+S              |OUT1<10>       |   10.630|
+S              |OUT1<11>       |   11.356|
+S              |OUT1<12>       |   11.134|
+S              |OUT1<13>       |   10.671|
+S              |OUT1<14>       |   10.780|
+S              |OUT1<15>       |    7.783|
+S              |OUT1<16>       |   11.085|
+S              |OUT1<17>       |   11.295|
+S              |OUT1<18>       |   10.935|
+S              |OUT1<19>       |   11.597|
+S              |OUT1<20>       |    7.932|
+S              |OUT1<21>       |   10.002|
+S              |OUT1<22>       |   10.480|
+S              |OUT1<23>       |    9.530|
+S              |OUT1<24>       |    7.360|
+S              |OUT1<25>       |   11.412|
+S              |OUT1<26>       |   11.704|
+S              |OUT1<27>       |   11.479|
+S              |OUT1<28>       |   10.398|
+S              |OUT1<29>       |   11.877|
+S              |OUT1<30>       |    9.832|
+S              |OUT1<31>       |   10.243|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 08 09:53:11 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4489 MB
+
+
+

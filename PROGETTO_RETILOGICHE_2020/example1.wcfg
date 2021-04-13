@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/TB_DIVIDER_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_divider" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_divider/tb_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_reset</obj_property>
+      <obj_property name="ObjectShortName">tb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_start</obj_property>
+      <obj_property name="ObjectShortName">tb_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_n[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_done</obj_property>
+      <obj_property name="ObjectShortName">tb_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/tb_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_error</obj_property>
+      <obj_property name="ObjectShortName">tb_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/size" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">size</obj_property>
+      <obj_property name="ObjectShortName">size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider25" type="divider">
+      <obj_property name="label">COUNTER SIGNALS-------</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/count_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/count_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/eoc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eoc</obj_property>
+      <obj_property name="ObjectShortName">eoc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/t_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">t_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">t_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/end_count" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">end_count</obj_property>
+      <obj_property name="ObjectShortName">end_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/n" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">n</obj_property>
+      <obj_property name="ObjectShortName">n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/all_ones" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">all_ones[4:0]</obj_property>
+      <obj_property name="ObjectShortName">all_ones[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_divider/uut/inst_COUNTER/all_zeros" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">all_zeros[4:0]</obj_property>
+      <obj_property name="ObjectShortName">all_zeros[4:0]</obj_property>
+   </wvobject>
+</wave_config>

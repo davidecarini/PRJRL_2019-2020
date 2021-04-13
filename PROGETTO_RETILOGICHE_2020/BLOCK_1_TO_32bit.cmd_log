@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.syr" 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "BLOCK_1_TO_32bit.ngc" BLOCK_1_TO_32bit.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o BLOCK_1_TO_32bit_map.ncd BLOCK_1_TO_32bit.ngd BLOCK_1_TO_32bit.pcf 
+par -w -intstyle ise -ol high -t 1 BLOCK_1_TO_32bit_map.ncd BLOCK_1_TO_32bit.ncd BLOCK_1_TO_32bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BLOCK_1_TO_32bit.twx BLOCK_1_TO_32bit.ncd -o BLOCK_1_TO_32bit.twr BLOCK_1_TO_32bit.pcf 
+xst -intstyle ise -ifn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.xst" -ofn "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/BLOCK_1_TO_32bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "BLOCK_1_TO_32bit.ngc" BLOCK_1_TO_32bit.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o BLOCK_1_TO_32bit_map.ncd BLOCK_1_TO_32bit.ngd BLOCK_1_TO_32bit.pcf 
+par -w -intstyle ise -ol high -t 1 BLOCK_1_TO_32bit_map.ncd BLOCK_1_TO_32bit.ncd BLOCK_1_TO_32bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BLOCK_1_TO_32bit.twx BLOCK_1_TO_32bit.ncd -o BLOCK_1_TO_32bit.twr BLOCK_1_TO_32bit.pcf 

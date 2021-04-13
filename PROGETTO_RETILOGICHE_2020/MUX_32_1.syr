@@ -1,0 +1,304 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.16 secs
+ 
+--> Reading design: MUX_32_1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MUX_32_1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MUX_32_1"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-pq208
+
+---- Source Options
+Top Module Name                    : MUX_32_1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/MUX_32_1 is now defined in a different file.  It was defined in "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd", and is now defined in "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd".
+WARNING:HDLParsers:3607 - Unit work/MUX_32_1/RTL is now defined in a different file.  It was defined in "C:/Users/DAVO_/Desktop/Progetto Reti Logiche 2020_21/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd", and is now defined in "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd".
+Compiling vhdl file "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd" in Library work.
+Entity <mux_32_1> compiled.
+Entity <mux_32_1> (Architecture <rtl>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MUX_32_1> in library <work> (architecture <rtl>) with generics.
+	N = 32
+	N_selection = 5
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <MUX_32_1> in library <work> (Architecture <rtl>).
+	N = 32
+	N_selection = 5
+Entity <MUX_32_1> analyzed. Unit <MUX_32_1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MUX_32_1>.
+    Related source file is "C:/Users/DAVO_/Desktop/FINAL_PROJECT_RETILOGICHE_2020_2021/PROGETTO_RETILOGICHE_2020/MUX_32_1.vhd".
+    Found 1-bit 32-to-1 multiplexer for signal <OUT1>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX_32_1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MUX_32_1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MUX_32_1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MUX_32_1.ngr
+Top Level Output File Name         : MUX_32_1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 38
+
+Cell Usage :
+# BELS                             : 31
+#      LUT3                        : 16
+#      MUXF5                       : 8
+#      MUXF6                       : 4
+#      MUXF7                       : 2
+#      MUXF8                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 37
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-5 
+
+ Number of Slices:                        8  out of   1920     0%  
+ Number of 4 input LUTs:                 16  out of   3840     0%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  38  out of    141    26%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.338ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 63 / 1
+-------------------------------------------------------------------------
+Delay:               9.338ns (Levels of Logic = 7)
+  Source:            S<0> (PAD)
+  Destination:       OUT1 (PAD)
+
+  Data Path: S<0> to OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.715   1.346  S_0_IBUF (S_0_IBUF)
+     LUT3:I0->O            1   0.479   0.000  Mmux_OUT1_6 (Mmux_OUT1_6)
+     MUXF5:I1->O           1   0.314   0.000  Mmux_OUT1_5_f5 (Mmux_OUT1_5_f5)
+     MUXF6:I1->O           1   0.298   0.000  Mmux_OUT1_4_f6 (Mmux_OUT1_4_f6)
+     MUXF7:I1->O           1   0.298   0.000  Mmux_OUT1_3_f7 (Mmux_OUT1_3_f7)
+     MUXF8:I1->O           1   0.298   0.681  Mmux_OUT1_2_f8 (OUT1_OBUF)
+     OBUF:I->O                 4.909          OUT1_OBUF (OUT1)
+    ----------------------------------------
+    Total                      9.338ns (7.311ns logic, 2.027ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.32 secs
+ 
+--> 
+
+Total memory usage is 4505372 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

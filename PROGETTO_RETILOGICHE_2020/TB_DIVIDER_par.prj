@@ -1,0 +1,2 @@
+vhdl work "netgen/par/DIVIDER_timesim.vhd"
+vhdl work "TB_DIVIDER.vhd"

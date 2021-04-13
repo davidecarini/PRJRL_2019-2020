@@ -1,0 +1,2 @@
+vhdl work "netgen/par/SHIFTER_timesim.vhd"
+vhdl work "TB_SHIFTER.vhd"
