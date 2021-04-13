@@ -1,8 +1,0 @@
-vhdl isim_temp "FS.vhd"
-vhdl isim_temp "R_RESULT.vhd"
-vhdl isim_temp "Q_RESULT.vhd"
-vhdl isim_temp "FS32.vhd"
-vhdl isim_temp "COUNTER_DOWN.vhd"
-vhdl isim_temp "Comparator.vhd"
-vhdl isim_temp "DIVIDER.vhd"
-vhdl isim_temp "TB_DIVIDER.vhd"
